@@ -41,3 +41,11 @@ Added a professional Meet Dean section, floating WhatsApp and Instagram links, a
 ## Final profile update
 
 Replaced the profile image with a tighter award-free portrait crop and updated the experience wording to reference the Dubai real estate market.
+
+
+## Meta Pixel
+
+Pixel ID: `1545756273663052`
+
+- `index.html`: PageView
+- `thankyou.html`: PageView + Lead
