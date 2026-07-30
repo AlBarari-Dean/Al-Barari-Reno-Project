@@ -881,3 +881,291 @@ a {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* Prominent social links and Meet Dean section */
+
+.floating-social {
+  position: fixed;
+  z-index: 20;
+  top: 50%;
+  right: 18px;
+  display: grid;
+  gap: 10px;
+  width: 176px;
+  transform: translateY(-50%);
+}
+
+.floating-social-link {
+  display: grid;
+  grid-template-columns: 38px 1fr;
+  gap: 11px;
+  min-height: 74px;
+  padding: 12px;
+  align-items: center;
+  border: 1px solid rgba(200, 170, 114, 0.58);
+  border-radius: 15px;
+  background: rgba(10, 14, 11, 0.88);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: transform var(--transition), border-color var(--transition), background var(--transition);
+}
+
+.floating-social-link:hover,
+.floating-social-link:focus-visible {
+  transform: translateX(-5px);
+  border-color: var(--gold-light);
+  outline: none;
+}
+
+.floating-social-link.whatsapp:hover {
+  background: rgba(18, 86, 48, 0.94);
+}
+
+.floating-social-link.instagram:hover {
+  background: linear-gradient(135deg, rgba(245, 133, 41, 0.92), rgba(193, 53, 132, 0.94), rgba(88, 81, 219, 0.92));
+}
+
+.social-icon {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,0.28);
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.floating-social-link strong,
+.floating-social-link small {
+  display: block;
+}
+
+.floating-social-link strong {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.floating-social-link small {
+  margin-top: 3px;
+  color: rgba(244, 240, 231, 0.66);
+  font-size: 9px;
+}
+
+.meet-dean {
+  position: relative;
+  z-index: 1;
+  width: min(1440px, calc(100% - 72px));
+  margin: 0 auto 36px;
+  padding: 54px 0;
+  border-top: 1px solid rgba(200, 170, 114, 0.34);
+  border-bottom: 1px solid rgba(200, 170, 114, 0.24);
+}
+
+.meet-dean-inner {
+  display: grid;
+  grid-template-columns: minmax(220px, 300px) minmax(260px, 1fr) minmax(300px, 420px);
+  gap: clamp(32px, 5vw, 70px);
+  align-items: center;
+}
+
+.dean-photo-wrap {
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  border: 1px solid rgba(200, 170, 114, 0.58);
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.28);
+}
+
+.dean-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.dean-profile h2 {
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(54px, 6vw, 82px);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 0.9;
+}
+
+.dean-role {
+  margin: 15px 0 0;
+  color: var(--gold-light);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 23px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dean-copy {
+  max-width: 540px;
+  margin: 24px 0 0;
+  color: var(--cream-muted);
+  font-size: 14px;
+}
+
+.dean-points {
+  display: grid;
+  gap: 11px;
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+  color: rgba(244, 240, 231, 0.84);
+  font-size: 13px;
+}
+
+.dean-points li::before {
+  display: inline-grid;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  place-items: center;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  color: var(--gold-light);
+  content: "✓";
+  font-size: 10px;
+}
+
+.dean-actions {
+  display: grid;
+  gap: 14px;
+}
+
+.dean-action {
+  display: flex;
+  min-height: 84px;
+  padding: 18px 22px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(200, 170, 114, 0.64);
+  border-radius: 14px;
+  background: rgba(12, 17, 13, 0.84);
+  transition: transform var(--transition), border-color var(--transition), filter var(--transition);
+}
+
+.dean-action:hover,
+.dean-action:focus-visible {
+  transform: translateY(-3px);
+  border-color: var(--gold-light);
+  filter: brightness(1.08);
+  outline: none;
+}
+
+.whatsapp-action {
+  background: linear-gradient(135deg, rgba(18, 114, 56, 0.93), rgba(11, 75, 39, 0.92));
+}
+
+.instagram-action {
+  background: linear-gradient(135deg, rgba(245, 133, 41, 0.92), rgba(193, 53, 132, 0.94), rgba(88, 81, 219, 0.92));
+}
+
+.dean-action strong,
+.dean-action small {
+  display: block;
+}
+
+.dean-action strong {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dean-action small {
+  margin-top: 4px;
+  color: rgba(255,255,255,0.78);
+  font-size: 11px;
+}
+
+@media (max-width: 1180px) {
+  .floating-social {
+    right: 10px;
+    width: 150px;
+  }
+
+  .meet-dean-inner {
+    grid-template-columns: 240px 1fr;
+  }
+
+  .dean-actions {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  .floating-social {
+    top: auto;
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+    width: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    transform: none;
+  }
+
+  .floating-social-link {
+    min-height: 58px;
+    grid-template-columns: 34px 1fr;
+    padding: 10px;
+  }
+
+  .social-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .meet-dean {
+    width: min(100% - 40px, 680px);
+  }
+
+  .meet-dean-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .dean-photo-wrap {
+    width: min(360px, 100%);
+  }
+
+  .dean-actions {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    padding-bottom: 104px;
+  }
+}
+
+@media (max-width: 580px) {
+  .floating-social-link small {
+    display: none;
+  }
+
+  .floating-social-link strong {
+    font-size: 9px;
+  }
+
+  .meet-dean {
+    width: calc(100% - 28px);
+    padding: 40px 0;
+  }
+
+  .dean-profile h2 {
+    font-size: 58px;
+  }
+
+  .dean-role {
+    font-size: 19px;
+  }
+}

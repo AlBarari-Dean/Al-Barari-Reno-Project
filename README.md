@@ -31,3 +31,8 @@ Public site:
 
 Replace `images/hero.jpg` or `files/brochure.pdf` while keeping the same
 filenames, then commit the changes. GitHub Pages will redeploy automatically.
+
+
+## July 2026 update
+
+Added a professional Meet Dean section, floating WhatsApp and Instagram links, and `images/dean.jpg`.
