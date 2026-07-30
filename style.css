@@ -986,7 +986,8 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 30%;
+  object-position: center 24%;
+  filter: brightness(0.92) contrast(1.06) saturate(0.94);
 }
 
 .dean-profile h2 {

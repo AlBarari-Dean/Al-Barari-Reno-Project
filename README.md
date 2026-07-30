@@ -36,3 +36,8 @@ filenames, then commit the changes. GitHub Pages will redeploy automatically.
 ## July 2026 update
 
 Added a professional Meet Dean section, floating WhatsApp and Instagram links, and `images/dean.jpg`.
+
+
+## Final profile update
+
+Replaced the profile image with a tighter award-free portrait crop and updated the experience wording to reference the Dubai real estate market.
