@@ -1,20 +1,17 @@
-# Al Barari B Type Renovation Project — Version 2
+# Restored Al Barari Launch Version
 
-Replacement files for the existing GitHub Pages repository.
+This restores the visually stronger, first-screen layout:
+
+- Hero image remains clearly visible
+- Lead form is immediately visible on desktop
+- Headline, figures and form appear together above the fold
+- Meet Dean section removed
+- Agreed confidentiality wording added
+- Formspree and Meta Pixel integrations retained
 
 ## Upload
-Replace:
-- `index.html`
-- `style.css`
-- `script.js`
-- `thankyou.html`
-- `images/hero.jpg`
 
-Keep the existing:
-- `files/brochure.pdf`
+Replace the contents of the GitHub repository with the contents of this ZIP.
 
-## Preserved integrations
-- Formspree: `https://formspree.io/f/mvzeypjz`
-- Meta Pixel: `1545756273663052`
-- Landing page: PageView
-- Thank-you page: PageView + Lead
+Meta Pixel ID: 1545756273663052
+Formspree endpoint: https://formspree.io/f/mvzeypjz
