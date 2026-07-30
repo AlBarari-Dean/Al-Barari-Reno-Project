@@ -1,17 +1,13 @@
-# Restored Al Barari Launch Version
+# Al Barari Original Refined
 
-This restores the visually stronger, first-screen layout:
+This version is based on the original design that was approved before Version 2.
 
-- Hero image remains clearly visible
-- Lead form is immediately visible on desktop
-- Headline, figures and form appear together above the fold
-- Meet Dean section removed
-- Agreed confidentiality wording added
-- Formspree and Meta Pixel integrations retained
+Only these changes have been made:
+- Confidential investment briefing wording
+- Request confidential access form heading
+- Access investment briefing button text
+- Concise Meet Dean wording
+- Meta Pixel and Lead tracking retained
 
-## Upload
-
-Replace the contents of the GitHub repository with the contents of this ZIP.
-
-Meta Pixel ID: 1545756273663052
-Formspree endpoint: https://formspree.io/f/mvzeypjz
+The original above-the-fold layout, hero image, form position, metrics,
+Meet Dean section, Formspree integration and brochure flow are preserved.
